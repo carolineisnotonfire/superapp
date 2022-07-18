@@ -1,10 +1,10 @@
-# Getting Started with Create React App
+# SuperApp WK!
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Esse projeto foi feito com NodeJS e React, o objetivo é criar uma API que cadastre, edite e exclua um usuário onde o usuário deve passar por um processo de autenticação com link único. A autenticação é feita com StytchAPI e a persistência de dados é feita com Firebase.
 
-## Available Scripts
+## Como funciona? 
 
-In the project directory, you can run:
+
 
 ### `npm start`
 

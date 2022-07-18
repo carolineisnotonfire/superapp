@@ -15,10 +15,10 @@
   background-color: #36393E;
   position: absolute;
   width:100%;
-  height:11%;
+  height:20%;
   top: 0%;
   align-items: center;
-  padding: 3vh;
+  justify-content: space-evenly;
 }
 
 .textFieldClass{
@@ -32,8 +32,12 @@
   height: 0vh;
 }
 
-.dadosSalvos{
-  display: center;
+.dadosParaEditar{
+  position: grid;
+  column-gap: 50px;
+  top: 20vh;
+  left: 2vh;
+  font-size: 18px;
 }
 
 .divButtonCriar{

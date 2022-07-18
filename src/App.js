@@ -45,9 +45,12 @@ function App() {
     // eslint-disable-next-line
   }, [usuarios]);
 
+
+
   return (
     <div className="App">
       <div className="cadastrarUsuario">
+      <h2> Cadastrar usuário: </h2>
         <div className="textFieldClass">
           <TextField
             id="filled-basic"
@@ -82,16 +85,16 @@ function App() {
       </div>
       {usuarios.map((usuario) => {
         return (
-          <div>
+          <div className="dadosParaEditar">
             <div className="dadosSalvos">
-              {" "}
-              <h3>Nome: {usuario.nome}</h3> <h3> Email: {usuario.email}</h3>
+              <h3>Nome: {usuario.nome}</h3> 
+              <h3> Email: {usuario.email}</h3>
             </div>
             <TextField
               id="filled-basic"
               label="Atualizar nome"
               variant="filled"
-              sx={{ backgroundColor: "#FFFFFF", hoverColor: "#3f2a56" }}
+              sx={{ backgroundColor: "#FFFFFF" }}
               onChange={(event) => {
                 setNewNome(event.target.value);
               }}
@@ -101,7 +104,7 @@ function App() {
               id="filled-basic"
               label="Atualizar e-mail"
               variant="filled"
-              sx={{ backgroundColor: "#FFFFFF", hoverColor: "#3f2a56" }}
+              sx={{ backgroundColor: "#FFFFFF"}}
               onChange={(event) => {
                 setNewEmail(event.target.value);
               }}
@@ -111,8 +114,7 @@ function App() {
               onClick={() => {
                 updateUsuario(usuario.id, usuario.nome, usuario.email);
               }}
-              className="divButtonAtualizar"
-              sx={{ backgroundColor: "#3f2a56" }}
+              sx={{ backgroundColor: "#3f2a56", ":hover": "#3f2a56" }}
             >
               Atualizar usuário
             </Button>
@@ -126,7 +128,8 @@ function App() {
             >
               Excluir usuário
             </Button>
-          </div>
+            
+          </div>  
         );
       })}
     </div>
